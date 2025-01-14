@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Wash_and_iron">
+
+    <TextView
+        android:id="@+id/washironTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WASH AND IRON"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/drycleanBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="DRY CLEAN"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/washironTv" />
+
+    <Button
+        android:id="@+id/washfoldBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="WASH and FOLD"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/drycleanBtn3"
+        app:layout_constraintTop_toBottomOf="@+id/washironTv" />
+
+    <Button
+        android:id="@+id/washironBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="WASHand IRON"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/washfoldBtn3"
+        app:layout_constraintTop_toBottomOf="@+id/washironTv" />
+
+    <Button
+        android:id="@+id/ironBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Iron"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toEndOf="@+id/washironBtn3"
+        app:layout_constraintTop_toBottomOf="@+id/washironTv" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="333dp"
+        android:layout_height="394dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/washironTv"
+        app:layout_constraintVertical_bias="0.762"
+        app:srcCompat="@drawable/clothes"
+        tools:layout_editor_absoluteX="39dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

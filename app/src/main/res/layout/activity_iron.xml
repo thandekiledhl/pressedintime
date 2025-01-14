@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Iron">
+
+    <TextView
+        android:id="@+id/ironTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="IRON"
+        android:textAlignment="center"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <Button
+        android:id="@+id/drycleanBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DRY CLEAN"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv" />
+
+    <Button
+        android:id="@+id/washfoldBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="WASH and FOLD"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/drycleanBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv" />
+
+    <Button
+        android:id="@+id/washironBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="WASH and IRON"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/washfoldBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv" />
+
+    <Button
+        android:id="@+id/ironBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Iron"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/washironBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="369dp"
+        android:layout_height="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv"
+        app:layout_constraintVertical_bias="0.698"
+        app:srcCompat="@drawable/clothes"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
